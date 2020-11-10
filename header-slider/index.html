@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="banner">
+      <div class="circle"></div>
+      <header>
+        <div class="logo-box">
+          <img src="./assets/images/logo.png" alt="" class="logo" />
+        </div>
+        <ul class="nav">
+          <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Menu</a></li>
+          <li class="nav__item"><a href="" class="nav__link">What's New</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="content-text">
+          <h2 class="heading">
+            it's not just coffee <br />
+            it's <span>Starbucks</span>
+          </h2>
+          <p class="text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+            doloribus fugiat dicta est dolor inventore, quos aut quidem
+            explicabo non ducimus, praesentium quo autem accusantium impedit
+            quae eos ratione quis.
+          </p>
+          <a href="#" class="btn-more"> learn more</a>
+        </div>
+        <div class="img-box">
+          <img src="./assets/images/img1.png" alt="" />
+        </div>
+        <ul class="thumb">
+          <li onclick="slider('img1.png');changeColor('#017143')">
+            <img src="./assets/images/thumb1.png" alt="" />
+          </li>
+          <li onclick="slider('img2.png');changeColor('#eb7495')">
+            <img src="./assets/images/thumb2.png" alt="" />
+          </li>
+          <li onclick="slider('img3.png');changeColor('#d752b1')">
+            <img src="./assets/images/thumb3.png" alt="" />
+          </li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href=""><img src="./assets/images/facebook.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./assets/images/twitter.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./assets/images/instagram.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
