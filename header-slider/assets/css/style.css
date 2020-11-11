@@ -174,3 +174,5 @@ header {
   clip-path: circle(630px at right 800px);
   transition: all 0.5s;
 }
+@media (max-width: 768px) {
+}

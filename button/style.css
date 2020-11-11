@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #2f3640;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  color: #00a8ff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  margin: 10px;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+}
+.btn:hover {
+  background-color: #00a8ff;
+  transition: all 0.5s;
+  transition-delay: 1s;
+  color: #fff;
+}
+.btn span {
+  position: absolute;
+  display: block;
+  background-color: #00a8ff;
+}
+.btn span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  transform: scale(0);
+  transform-origin: top;
+  transition: transform 0.25s;
+}
+.btn:hover span:nth-child(1) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition: transform 0.25s;
+}
+.btn span:nth-child(2) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 0.25s;
+  transition-delay: 0.25s;
+}
+.btn:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: left;
+  transition: transform 0.25s;
+  transition-delay: 0.25s;
+}
+.btn span:nth-child(3) {
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: transform 0.25s;
+  transition-delay: 0.5s;
+}
+.btn:hover span:nth-child(3) {
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform 0.25s;
+  transition-delay: 0.5s;
+}
+.btn span:nth-child(4) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 0.25s;
+  transition-delay: 0.75s;
+}
+.btn:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: right;
+  transition: transform 0.25s;
+  transition-delay: 0.75s;
+}
